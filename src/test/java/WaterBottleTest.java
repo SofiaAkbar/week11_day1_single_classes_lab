@@ -5,6 +5,7 @@ import static org.junit.Assert.assertEquals;
 
 public class WaterBottleTest {
     WaterBottle waterBottle;
+    WaterBottle waterBottle2;
 
     @Before
     public void before(){
@@ -28,6 +29,7 @@ public class WaterBottleTest {
 
     @Test
     public void canFill(){
-        assertEquals(100, waterBottle.fill());
+        waterBottle2 = new WaterBottle(80);
+        assertEquals(100, waterBottle2.fill());
     }
 }
